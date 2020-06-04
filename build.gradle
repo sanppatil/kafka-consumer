@@ -15,3 +15,8 @@ dependencies {
 application {
     mainClassName = 'com.kafkaSimpleConsumer.Main'
 }
+
+task(runConsumerWithThreads, dependsOn: 'classes', type: JavaExec) {
+   main = 'com.kafkaSimpleConsumer.ConsumerWithThreads'
+   classpath = sourceSets.main.runtimeClasspath
+}
