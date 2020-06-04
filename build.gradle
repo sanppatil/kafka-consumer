@@ -9,6 +9,7 @@ repositories {
 dependencies {
     testImplementation 'junit:junit:4.12'
     implementation 'org.apache.kafka:kafka-clients:2.5.0'
+    implementation group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.30'
 }
 
 application {
